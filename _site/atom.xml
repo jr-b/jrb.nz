@@ -2,15 +2,93 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Sidey</title>
- <link href="jrb.nz/atom.xml" rel="self"/>
- <link href="jrb.nz/"/>
- <updated>2020-07-07T16:32:57-04:00</updated>
- <id>jrb.nz</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-07-17T14:54:27-04:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>My Firefox set-up</title>
+   <link href="http://localhost:4000/2020/07/09/difference-between-font-formats"/>
+   <updated>2020-07-09T00:00:00-04:00</updated>
+   <id>http://localhost:4000/2020/07/09/difference-between-font-formats</id>
+   <content type="html">&lt;p&gt;Since the end of uBlock Origin on Safari, I’ve been using Firefox as my main browser. Here’s how I’m setting it up so it’s nice and fast.&lt;/p&gt;
+
+&lt;h2 id=&quot;materialfox&quot;&gt;MaterialFox theme&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Inspired by Google’s Material Design and their latest Google Chrome UI, this theme turns your Firefox into a Material-styled web browser. The aim was to style the browser as closely as possible to the latest Google Chrome dev builds, where practical.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This type of theme is installed by adding a userChrome.css file to your Firefox profile folder. The project is &lt;a href=&quot;https://github.com/muckSponge/MaterialFox&quot;&gt;actively updated on Github&lt;/a&gt;. You can follow the recommended instructions to replicate even more the Chrome behavior. The releases version numbers are following the Firefox releases; use the one for your Firefox version.&lt;/p&gt;
+
+&lt;h2 id=&quot;search-engines&quot;&gt;Search engines&lt;/h2&gt;
+
+&lt;p&gt;I’m running a &lt;a href=&quot;https://github.com/benbusby/whoogle-search&quot;&gt;Whoogle&lt;/a&gt; instance on Heroku. To set it up as a search engine in Firefox, you only need to visit your Whoogle URL and then click “Add Search Engine” (the three dots button in the URL bar). You can then select Whoogle in the Firefox settings.&lt;/p&gt;
+
+&lt;p&gt;Since Whoogle replace Google, you can unselect Google as one of the alternate search engines. I still keep DuckDuckGo and Wikipeadia.&lt;/p&gt;
+
+&lt;h2 id=&quot;extensions&quot;&gt;Extensions&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;uBlock Origin&lt;/strong&gt; - truly the best extension to control what’s loaded on a page. Litteraly can’t browse the web without this one.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Are.na&lt;/strong&gt; - Are.na extension to add blocks to your channels.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Firefox Multi-Account Containers&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Web Archives&lt;/strong&gt; - Allows to search for cached content (Google, Bing, etc.) or  to query the Wayback Machine with an URL (still new to this extension).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;aboutconfig-modifications&quot;&gt;&lt;code&gt;about:config&lt;/code&gt; modifications&lt;/h2&gt;
+
+&lt;p&gt;I’ve been adjusting a couple of settings in &lt;code&gt;about:config&lt;/code&gt;:&lt;/p&gt;
+
+&lt;h3 id=&quot;disabling-animations&quot;&gt;Disabling animations&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;cosmeticAnimations&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;full-screen-api.transition-duration.enter&lt;/code&gt; to &lt;code&gt;0&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;full-screen-api.transition-duration.leave&lt;/code&gt; to &lt;code&gt;0&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;disabling-pocket&quot;&gt;Disabling Pocket&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;extensions.pocket.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;privacy&quot;&gt;Privacy&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;geo.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;privacy.firstparty.isolate&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;privacy.resistFingerprinting&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;browser.cache.offline.enable&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;browser.urlbar.speculativeConnect.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;dom.battery.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;dom.event.clipboardevents.enabled&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;network.cookie.cookieBehavior&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;network.cookie.lifetimePolicy&lt;/code&gt; to &lt;code&gt;2&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;network.http.referer.trimmingPolicy&lt;/code&gt; to &lt;code&gt;2&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;webgl.disabled&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;random&quot;&gt;Random&lt;/h3&gt;
+
+&lt;p&gt;&lt;code&gt;general.smoothScroll.mouseWheel.durationMaxMS&lt;/code&gt; to &lt;code&gt;200&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;   &lt;br /&gt;
+&lt;code&gt;security.insecure_connection_text.enabled&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;browser.aboutConfig.showWarning&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; &lt;br /&gt;
+&lt;code&gt;browser.urlbar.trimURLs&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;For details about each entry, see &lt;a href=&quot;https://wiki.mozilla.org/Privacy/Privacy_Task_Force/firefox_about_config_privacy_tweeks&quot;&gt;Firefox: Privacy Related “about:config” Tweaks&lt;/a&gt;. A lot more can be found on this list: &lt;a href=&quot;http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries&quot;&gt;About:config_Entries&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;More details on Firefox scroll tweaks can be found here: &lt;a href=&quot;https://web.archive.org/web/20171214193241/http://12bytes.org/tech/firefox-scroll-tweak&quot;&gt;Firefox Scroll Tweak&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
 
 </feed>
