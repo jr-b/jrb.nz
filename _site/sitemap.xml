@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/search</loc>
-<lastmod>2020-07-17T14:54:27-04:00</lastmod>
+<loc>jrb.nz/search</loc>
+<lastmod>2020-07-17T14:57:33-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/writing</loc>
-<lastmod>2020-07-17T14:54:27-04:00</lastmod>
+<loc>jrb.nz/writing</loc>
+<lastmod>2020-07-17T14:57:33-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/2020/07/09/difference-between-font-formats</loc>
+<loc>jrb.nz/2020/07/09/difference-between-font-formats</loc>
 <lastmod>2020-07-09T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>jrb.nz/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tag/macos/</loc>
+<loc>jrb.nz/tag/macos/</loc>
 </url>
 </urlset>

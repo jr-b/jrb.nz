@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Sidey</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-07-17T14:54:27-04:00</updated>
- <id>http://localhost:4000</id>
+ <link href="jrb.nz/atom.xml" rel="self"/>
+ <link href="jrb.nz/"/>
+ <updated>2020-07-17T14:57:33-04:00</updated>
+ <id>jrb.nz</id>
  <author>
    <name></name>
    <email></email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>My Firefox set-up</title>
-   <link href="http://localhost:4000/2020/07/09/difference-between-font-formats"/>
+   <link href="jrb.nz/2020/07/09/difference-between-font-formats"/>
    <updated>2020-07-09T00:00:00-04:00</updated>
-   <id>http://localhost:4000/2020/07/09/difference-between-font-formats</id>
+   <id>jrb.nz/2020/07/09/difference-between-font-formats</id>
    <content type="html">&lt;p&gt;Since the end of uBlock Origin on Safari, I’ve been using Firefox as my main browser. Here’s how I’m setting it up so it’s nice and fast.&lt;/p&gt;
 
 &lt;h2 id=&quot;materialfox&quot;&gt;MaterialFox theme&lt;/h2&gt;
