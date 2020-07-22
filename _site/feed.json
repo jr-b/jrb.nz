@@ -1,9 +1,9 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Sidey",
+    "title": "jrb.nz",
     "home_page_url": "jrb.nz/",
     "feed_url": "jrb.nz/feed.json",
-    "description": "Simple and minimalistic jekyll blogging theme.",
+    "description": "Personal blog of Jeremi Robitaille-Brassard",
     "icon": "jrb.nz/apple-touch-icon.png",
     "favicon": "jrb.nz/favicon.ico",
     "expired": false,
