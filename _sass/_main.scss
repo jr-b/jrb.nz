@@ -72,17 +72,19 @@ nav ul {
 }
 
 a {
-    color: var(--link-color);
-    text-decoration-skip-ink: auto;
-    text-decoration-color: var(--main-text-color);
-  	text-decoration-thickness: 1px;  
-	text-decoration-style: dotted;
+	color: var(--link-color);
+}
+
+.post a {
+	color: var(--link-color);
+	text-decoration: none;
+	border-bottom:1px dashed var(--link-color);
 
 }
 
 a:hover{
-	color: greenyellow;
-	
+	color: rgb(139, 224, 11);
+	border-bottom:1px solid var(--link-color);
 	
 }
 
@@ -105,6 +107,7 @@ pre {
 
 .meta {
 	margin: 2rem 0;
+	font-size: smaller;
 }
 
 code,pre {
@@ -143,7 +146,12 @@ header {
 
 header a {
 	text-decoration: none;
+	border-bottom: none;
+}
 
+header a:hover {
+	text-decoration: none;
+	border-bottom: none;
 }
 
 header li {

@@ -2,28 +2,30 @@
     <div class="switch-mode">
     <a id="theme-toggle" onclick="modeSwitcher()" style="cursor: pointer;text-align: center;margin: auto; text-decoration: none;"></a>
     </div>
-    <p class="bottom-text"><em>Jérémi Robitaille-Brassard</em> — 2020</p>
+
+    <div class="bottom-text">
+        <p><em>Jérémi Robitaille-Brassard</em> — {{ site.time | date: '%Y' }} — <a href="mailto:j@jrb.nz">j@jrb.nz</a></p>
+        <p>Made in Montreal using Jekyll and CSS</p>
+        </div>
 </footer>
 
 <!--FOOTER CSS BEGINS -->
 
 <style>
     .switch-mode{
+    background-color: transparent;
     width: 11.7rem;
     position: fixed;
     transform: rotate(-90deg);
     top: calc(100vh / 2);
     left: -3.4rem;
     text-align: right;
-
     }
     
     .bottom-text{
         font-size: smaller;
-        position: fixed;
-        bottom: 10px;
-        left: calc(100vw / 2);
-        
+        text-align: center;
+        padding: 0.3rem;
     }
 
 </style>
