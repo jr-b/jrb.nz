@@ -4,7 +4,7 @@
  <title>jrb.nz</title>
  <link href="jrb.nz/atom.xml" rel="self"/>
  <link href="jrb.nz/"/>
- <updated>2020-07-21T21:51:30-04:00</updated>
+ <updated>2020-07-23T21:03:39-04:00</updated>
  <id>jrb.nz</id>
  <author>
    <name></name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>My Firefox set-up</title>
-   <link href="jrb.nz/2020/07/09/difference-between-font-formats"/>
+   <link href="jrb.nz/2020/07/09/firefox-setup"/>
    <updated>2020-07-09T00:00:00-04:00</updated>
-   <id>jrb.nz/2020/07/09/difference-between-font-formats</id>
+   <id>jrb.nz/2020/07/09/firefox-setup</id>
    <content type="html">&lt;p&gt;Since the end of uBlock Origin on Safari, I’ve been using Firefox as my main browser. Here’s how I’m setting it up so it’s nice and fast.&lt;/p&gt;
 
 &lt;h2 id=&quot;materialfox&quot;&gt;MaterialFox theme&lt;/h2&gt;
