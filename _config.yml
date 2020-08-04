@@ -2,16 +2,11 @@ site: jrb.nz
 url: jrb.nz
 title: jrb.nz
 description: Personal blog of Jeremi Robitaille-Brassard
-twitter:
-  username: #yourusername
-  card: summary
-  creator: #yourusername
 author:
   twitter: #yourusername
   name: #yourusername
-  avatar:
-  email: #youremail
-  url: #yoururl
+  email: j@jrb.nz
+  url: https://jrb.nz
 permalink: pretty
 
 baseurl: ""
