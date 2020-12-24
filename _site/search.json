@@ -2,6 +2,17 @@
   
     {
 
+      "title"    : "Configurer Docker sur un Raspberry Pi",
+      "url"      : "/2020/12/20/docker-setup-rpi",
+      "category" : "",
+      "tags"     : "docker, raspberry pi",
+      "date"     : "2020-12-20 00:00:00 -0500",
+      "description" : "Configuration rapide de Docker sur un Raspberry Pi"
+
+    } ,
+  
+    {
+
       "title"    : "My Firefox set-up",
       "url"      : "/2020/07/09/firefox-setup",
       "category" : "",

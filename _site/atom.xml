@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>jrb.nz</title>
- <link href="jrb.nz/atom.xml" rel="self"/>
- <link href="jrb.nz/"/>
- <updated>2020-08-04T15:11:10-04:00</updated>
- <id>jrb.nz</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-12-24T17:30:02-05:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name></name>
    <email>j@jrb.nz</email>
@@ -13,10 +13,41 @@
 
  
  <entry>
+   <title>Configurer Docker sur un Raspberry Pi</title>
+   <link href="http://localhost:4000/2020/12/20/docker-setup-rpi"/>
+   <updated>2020-12-20T00:00:00-05:00</updated>
+   <id>http://localhost:4000/2020/12/20/docker-setup-rpi</id>
+   <content type="html">&lt;p&gt;Petit guide rapide pour configurer Docker sur un Raspberry Pi.&lt;/p&gt;
+
+&lt;h3 id=&quot;récupère-le-script-dinstallation&quot;&gt;Récupère le script d’installation&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;curl -fsSL https://get.docker.com -o get-docker.sh&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;ajoute-les-droits-pour-lutilisateur-pi&quot;&gt;Ajoute les droits pour l’utilisateur pi&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo usermod -aG docker pi&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;lance-un-container-de-test&quot;&gt;Lance un container de test&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;docker run hello-world&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;docker-compose&quot;&gt;docker-compose&lt;/h2&gt;
+
+&lt;h3 id=&quot;installer-les-dépendances&quot;&gt;Installer les dépendances&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install -y libffi-dev libssl-dev&lt;/code&gt;
+&lt;code&gt;sudo apt-get install -y python3 python3-pip&lt;/code&gt;
+&lt;code&gt;sudo apt-get remove python-configparser&lt;/code&gt; (optionel)&lt;/p&gt;
+
+&lt;h3 id=&quot;installer-docker-compose&quot;&gt;Installer docker-compose&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo pip3 -v install docker-compose&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Installation de n8n docker
+&lt;code&gt;docker run -d --restart always --name n8n -p 5678:5678 -v ~/.n8n:/root/.n8n n8nio/n8n:0.78.0-rpi&lt;/code&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>My Firefox set-up</title>
-   <link href="jrb.nz/2020/07/09/firefox-setup"/>
+   <link href="http://localhost:4000/2020/07/09/firefox-setup"/>
    <updated>2020-07-09T00:00:00-04:00</updated>
-   <id>jrb.nz/2020/07/09/firefox-setup</id>
+   <id>http://localhost:4000/2020/07/09/firefox-setup</id>
    <content type="html">&lt;p&gt;Since the end of uBlock Origin on Safari, I’ve been using Firefox as my main browser. Here’s how I’m setting it up so it’s nice and fast.&lt;/p&gt;
 
 &lt;h2 id=&quot;materialfox&quot;&gt;MaterialFox theme&lt;/h2&gt;
