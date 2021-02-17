@@ -4,7 +4,7 @@
  <title>jrb.nz</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2020-12-24T17:30:02-05:00</updated>
+ <updated>2021-02-16T20:06:37-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name></name>
@@ -38,7 +38,7 @@
 &lt;h3 id=&quot;installer-docker-compose&quot;&gt;Installer docker-compose&lt;/h3&gt;
 &lt;p&gt;&lt;code&gt;sudo pip3 -v install docker-compose&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;Installation de n8n docker
+&lt;p&gt;Installation de n8n
 &lt;code&gt;docker run -d --restart always --name n8n -p 5678:5678 -v ~/.n8n:/root/.n8n n8nio/n8n:0.78.0-rpi&lt;/code&gt;&lt;/p&gt;
 </content>
  </entry>

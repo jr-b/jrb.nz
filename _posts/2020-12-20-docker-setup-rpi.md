@@ -27,5 +27,5 @@ Petit guide rapide pour configurer Docker sur un Raspberry Pi.
 ### Installer docker-compose
 `sudo pip3 -v install docker-compose`
 
-Installation de n8n docker
+Installation de n8n
 `docker run -d --restart always --name n8n -p 5678:5678 -v ~/.n8n:/root/.n8n n8nio/n8n:0.78.0-rpi`
